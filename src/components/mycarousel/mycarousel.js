@@ -19,7 +19,7 @@ function Mycarousel(props) {
     const navigate = useNavigate();
 
     useEffect(() => {
-        fetch("http://localhost:8000/databaseCall")
+        fetch("https://agmovies-api.onrender.com/databaseCall")
             .then(res => res.json())
             .then(data => setnomDb(data.votedmovie))
     }, [])
@@ -57,7 +57,7 @@ function Mycarousel(props) {
                 }
             }
         }
-        const postURL = "http://localhost:8000/nominate" //Our previously set up route in the backend
+        const postURL = "https://agmovies-api.onrender.com/nominate" //Our previously set up route in the backend
         fetch(postURL, {
             method: 'POST',
             headers: {
@@ -72,7 +72,7 @@ function Mycarousel(props) {
 
         })
 
-        const postURL2 = "http://localhost:8000/leaders" //Our previously set up route in the backend
+        const postURL2 = "https://agmovies-api.onrender.com/leaders" //Our previously set up route in the backend
         fetch(postURL2, {
             method: 'POST',
             headers: {

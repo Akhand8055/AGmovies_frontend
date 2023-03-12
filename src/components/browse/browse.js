@@ -12,7 +12,7 @@ import Mycarousel from "../mycarousel/mycarousel";
 const Browse = () => {
     const [chk, setchk] = useState();
     useEffect(() => {
-        fetch("http://localhost:8000/isUserAuth", {
+        fetch("https://agmovies-api.onrender.com/isUserAuth", {
             headers: {
                 "x-access-token": localStorage.getItem("token")
             }
