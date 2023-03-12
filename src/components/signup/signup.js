@@ -81,7 +81,7 @@ const Signup = () => {
                   </form>
 
                   <div>
-                    <p class="mb-0">Already have a account? <a href="/login" class="text-white-50 fw-bold">Log in</a>
+                    <p class="mb-0">Already have a account? <a href="https://agmovies.onrender.com/login" class="text-white-50 fw-bold">Log in</a>
                     </p>
                   </div>
 
